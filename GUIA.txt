@@ -1,0 +1,29 @@
+npm init {
+    crear el package json, metainfo de proyecto, 
+    contiene las dependencias del proyecto
+}
+
+npm install express mysql express-myconnection morgan ejs{
+    instala modulos de mysql, express y el motor de plantillas
+}
+
+npm install nodemon -D {
+    reinicia el server cada que hay un cambio en el codigo
+    -D (dev dependencies) => dependencia de desarrollo
+    en Package json->scripts creamos el comando  "dev": "nodemon SRC/app.js", 
+    para ejecutarlo ponemos npm run dev, este mantendra  el servidor en escucha.
+}
+
+Estructura{
+    []Carpeta SRC con los recursos del proyecto
+    []Public: Material de estilos, imagenes etc que ocupe en el proyecto
+    []Routes: Llama al controlador cuando se haga una peticion al servidor(POST,GET)
+    []Views: Almacenamos todas las vistas con archivos .ejs (motor de plantillas).
+        °Partials: Vistas que se repiten(header,footer,menus etc)
+    []Controllers: Archivo con los metodos hacia la base de datos
+    []Script: Base de datos
+    []Package.Json: Contiene todas las dependencias de bibliotecas npm.
+    de modo que al ejecutar npm install este indicara que recursos estan definidos 
+    para utilizar
+}
+

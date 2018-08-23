@@ -1,0 +1,19 @@
+<% include Partials/_header %>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-5">
+            <div class="card-body">
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="user" placeholder="Usuario" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="pass" placeholder="Contraseña" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primaary">Acceder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include Partials/_footer %>
